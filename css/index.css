@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root {
-    --main-color:#222323;
+    --main-color: #222323;
     --accent-color: white;
     scroll-behavior: smooth;
 }
@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-} 
+}
 
 body {
     max-width: 980px;
@@ -22,16 +22,17 @@ body {
     display: flex;
     justify-content: space-around;
 }
-.overheader p{
-    font-family:'PT Sans';
+
+.overheader p {
+    font-family: 'PT Sans';
     color: var(--accent-color);
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 header .header-contacts a {
     color: var(--accent-color);
     text-decoration: none;
-    font-family:'PT Sans';
+    font-family: 'PT Sans';
     font-weight: bold;
 }
 
@@ -44,7 +45,7 @@ header .header-contacts a:hover {
 }
 
 .header-menu a {
-    font-family:'PT Sans';
+    font-family: 'PT Sans';
     font-weight: bold;
     margin-left: 20px;
     margin-bottom: 12.5px;
@@ -76,7 +77,9 @@ header nav {
     min-height: 400px;
 }
 
-.banner p, h1, a {
+.banner p,
+h1,
+a {
     margin-left: 20px;
     font-family: 'Bebas Neue';
 }
@@ -95,12 +98,91 @@ header nav {
     color: red;
 }
 
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 236);
+    width: auto;
+    height: 30vh;
+    justify-content: center
+}
+
+.quote-text {
+    display: flex;
+    font-family: 'PT Sans';
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+}
+
+.quote-signature {
+    display: flex;
+    font-family: 'PT Sans';
+    color: grey;
+    justify-content: center;
+}
+
+#categories-block {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    min-height: 400px;
+
+}
+
+.new-arrivals {
+    background-image: url(../img/new-arrivals.svg);
+    background-size: cover;
+
+}
+
+.trainers {
+    background-image: url(../img/trainers.png);
+    background-size: cover;
+}
+
+.hot-sale {
+    background-image: url(../img/hot-sale.png);
+    background-size: cover;
+}
+
+#categories-block h3 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: 100;
+    margin-left: 35px;
+}
+
+#categories-block span {
+    font-family: 'Bebas Neue';
+    color: red;
+}
+
+#categories-block a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    margin-left: 35px;
+    margin-bottom: 12.5px;
+    margin-right: 20px;
+    margin-top: 12.5px;
+    font-size: 15px;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+#categories-block a:hover {
+    text-decoration: underline;
+}
+
+.position {
+    margin-top: 250px;
+}
 
 
 /*Controls*/
 
 .button {
-    background-color: #f40106; /* Red */
+    background-color: #f40106;
+    /* Red */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -110,7 +192,9 @@ header nav {
     display: inline-block;
     font-size: 16px;
     transition-duration: 0.4s;
-  }
-  .button:hover {
+}
+
+.button:hover {
     background-color: var(--main-color);
     color: white;
+}
