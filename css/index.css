@@ -1,3 +1,333 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #222323;
+    --accent-color: white;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+
+}
+
+/* ------- Overheader ------- */
+.overheader {
+    background-color: red;
+}
+
+
+.overheader p {
+    font-family: 'PT Sans';
+    color: var(--accent-color);
+    font-weight: bold;
+
+}
+
+.overheader-contacts a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-family: 'PT Sans';
+    font-weight: bold;
+}
+
+.overheader-contacts a:hover {
+    text-decoration: underline;
+}
+
+/* ------- Header ------- */
+
+.header-menu {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-menu a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 12.5px;
+    margin-right: 20px;
+    margin-top: 12.5px;
+    font-size: 14px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.header-menu a:hover {
+    text-decoration: underline;
+}
+
+.header-menu .navbar-toggler {
+    transform: scale(0.8);
+}
+
+.header-menu .navbar-nav {
+    align-items: center;
+}
+
+/* ----- BANNER ----- */
+
+.banner {
+    background-image: url(../img/banner-photo.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 540px;
+    padding: 0 24px;
+    padding-top: 200px;
+}
+
+.banner p,
+h1,
+a {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.banner p {
+    color: grey;
+    font-size: 20px;
+}
+
+.banner h1 {
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.banner span {
+    color: red;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 236);
+    width: auto;
+    height: 30vh;
+    justify-content: center
+}
+
+.quote-text {
+    display: flex;
+    font-family: 'PT Sans';
+    text-align: center;
+    font-style: italic;
+    align-items: center;
+}
+
+.quote-signature {
+    display: flex;
+    font-family: 'PT Sans';
+    color: grey;
+    justify-content: center;
+}
+
+/* ------- Categories ------- */
+
+.position {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 50px 20px;
+    grid-gap: 20px;
+}
+
+.position a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+.position a:hover {
+    text-decoration: underline;
+}
+
+.new-arrivals {
+    background-image: url(../img/new-arrivals.svg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
+}
+
+.trainers {
+    background-image: url(../img/trainers.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
+}
+
+.hot-sale {
+    background-image: url(../img/hot-sale.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
+}
+
+.hr-short-categories-red {
+    border-bottom: 2px solid red;
+    opacity: 1;
+    width: 80px;
+}
+
+.hr-categories-red {
+    border-bottom: 2px solid red;
+    opacity: 1;
+    width: 120px;
+}
+
+.position h3 {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.position span {
+    font-family: 'Bebas Neue';
+    color: red;
+}
+
+/*RESPONSIVE*/
+
+@media (min-width: 980px) {
+.container-block {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+/ ------- *Overheader* ------- /
+.overheader {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    padding: 12px 40px 12px 40px;
+    justify-content: space-between;
+    }
+.overheader-text {
+        flex: 2;
+    }
+.overheader-contacts {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+    }
+}
+
+/* -------Header ------- */
+.header-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding-right: 20px;
+}
+
+.nav-item.hide-lg {
+    display: none;
+}
+
+.header-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.links {
+    padding: 0 15px;
+    font-size: 25px;
+}
+
+/* ----- Banner ---- */
+
+.banner {
+    min-height: 1000px;
+    padding-top: 350px;
+    padding-left: 40px;
+    }
+
+.banner h1 {
+    font-size: 7rem;
+}
+
+.banner p {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+
+
+/* ------- Categories ------- */
+
+.position {
+    grid-template-columns: 50% 1fr 1fr;
+    width: 100%;
+    min-height: 400px;
+}
+
+.position a {
+    font-size: 0.9rem;
+}
+.position h3 {
+    font-size: 2.6rem;
+}
+
+.new-arrivals {
+    padding-top: 270px;
+    min-height: 400px;
+}
+
+.trainers {
+    padding-top: 270px;
+    min-height: 400px;
+}
+
+.hot-sale {
+    padding-top: 270px;
+    min-height: 400px;
+} 
+}
+
+
+
+
+
+/*Controls*/
+
+.button {
+    background-color: #f40106;
+    /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: var(--main-color);
+    color: white;
+}
