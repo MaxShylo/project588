@@ -14,7 +14,6 @@
 <body>
     <header>
         <div class="overheader">
-            <div class="container-block">
                 <div class="overheader-text">
                     <p>We`ve extended our returns period to 30 days</p>
                 </div>
@@ -22,7 +21,6 @@
                     <a href="mailto:workout@email.com">workout@email.com</a>
                     <a href="tel:+12345678900">+1(234) 567 89 00</a>
                 </div>
-            </div>
         </div>
         <div class="header-menu">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -48,11 +46,11 @@
                             </li>
                             <div class="header-contacts">
                                 <a class="links" href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook-logo"
-                                        height="27" width="35"></a>
+                                        height="32" width="37"></a>
                                 <a class="links" href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram-logo"
                                         height="25" width="25"></a>
-                                <a class="links" href="https://youtube.com"><img src="img/youtube.png" alt="youtube-logo" height="25"
-                                        width="30"></a>
+                                <a class="links-youtube" href="https://youtube.com"><img src="img/youtube.png" alt="youtube-logo" height="25"
+                                        width="32"></a>
                             </div>
                         </ul>
                     </div>
@@ -60,40 +58,34 @@
             </nav>
         </div>
         <div class="banner">
-            <p>ASPIRE TO MORE</p>
-            <h1>NEW <span>COLLECTIONS</span></h1>
-            <h1>BY TOP BRANDS<span>.</span></h1>
-            <a href="#main-collection" class="button">Shop now →</a>
+            <p class="banner-text">ASPIRE TO MORE</p>
+            <h1 class="banner-text-main">NEW <span>COLLECTIONS</span></h1>
+            <h1 class="banner-text-main">BY TOP BRANDS<span>.</span></h1>
+            <a href="#main-collection" class="button banner-text-button">Shop now →</a>
         </div>
         <section class="quote">
-            <div class="quote-position">
-                <hr>
-                <p class="quote-text">
-                    There are two types of people who will tell you thet you cannot make a difference in this world:
-                    those
-                    who are afraid to try and those who are afraid you will succeed
-                </p>
-                <hr>
-                <p class="quote-signature">Ray Goforth</p>
-            </div>
+                <hr class="quote-line">
+                <p class="quote-text">Never say never, because limits, like fears, are often just an <span class="quote-red">ILLUSION</span>.</p>
+                <hr class="quote-line">
+                <p class="quote-signature">Michael Jordan</p>
         </section>
     </header>
     <main>
         <section id="categories-block" class="categories">
-            <div class="conteiner-block">
+            <div class="conteiner-block-categories">
                 <div class="position">
                     <div class="new-arrivals">
-                        <h3>NEW ARRIVALS<span>.</span></h3>
+                        <h3 class="categories-name">NEW ARRIVALS<span>.</span></h3>
                         <hr class="hr-short-categories-red">
                         <a href="#main-collection">Shop Collection →</a>
                     </div>
                     <div class="trainers">
-                        <h3>TRAINERS<span>.</span></h3>
+                        <h3 class="categories-name">TRAINERS<span>.</span></h3>
                         <hr class="hr-categories-red">
                         <a href="#main-collection">Shop Collection →</a>
                     </div>
                     <div class="hot-sale">
-                        <h3>HOT SALE<span>.</span></h3>
+                        <h3 class="categories-name">HOT SALE<span>.</span></h3>
                         <hr class="hr-categories-red">
                         <a href="#main-collection">Shop Collection →</a>
                     </div>
@@ -162,7 +154,7 @@
         </div>
         <div class="product-list"></div>
         <article class="product">
-            <img src="img/adidas-cloudfoam-trainers.jfif" alt="Adidas Cloud Trainers">
+            <img src="#" alt="Adidas Cloud Trainers">
             <h5>Adidas Cloudfoam Trainers</h5>
             <p class="price">$60,00USD
             <p>
@@ -171,7 +163,7 @@
             </div>
         </article>
         <article class="product">
-            <img src="img/reebok-workout-shorts.jfif" alt="Reebok workout Shorts">
+            <img src="#" alt="Reebok workout Shorts">
             <h5>Reebok workout Shorts</h5>
             <p class="price">$25,00USD
             <p>
@@ -180,7 +172,7 @@
             </div>
         </article>
         <article class="product">
-            <img src="img/puma-fitness.jfif" alt="Puma Fitness Shoes">
+            <img src="#" alt="Puma Fitness Shoes">
             <h5>Puma Fitness Shoes in Grey</h5>
             <p class="price">$60,00USD
             <p>
@@ -189,7 +181,7 @@
             </div>
         </article>
         <article class="product">
-            <img src="img/puma-essential.jfif" alt="Puma Essential">
+            <img src="#" alt="Puma Essential">
             <h5>Puma Essential Tank Top</h5>
             <p class="price">$43,00USD
             <p>
@@ -198,7 +190,7 @@
             </div>
         </article>
         <article class="product">
-            <img src="img/nike-classic.jfif" alt="Nike Classic">
+            <img src="#" alt="Nike Classic">
             <h5>Nike Classic Polo T-Shirt</h5>
             <p class="price">$23,00USD
             <p>
@@ -252,8 +244,7 @@
                     <tr>
                         <th>
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50862.6222430617!2d-76.61553952540602!3d39.278804745880734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96de11e6b926bb86!2sUnder%20Armour%20Brand%20House!5e0!3m2!1suk!2spl!4v1617919649131!5m2!1suk!2spl"
-                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>">
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50862.6222430617!2d-76.61553952540602!3d39.278804745880734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96de11e6b926bb86!2sUnder%20Armour%20Brand%20House!5e0!3m2!1suk!2spl!4v1617919649131!5m2!1suk!2spl" allowfullscreen="" loading="lazy"></iframe>">
                         </th>
                     </tr>
                 </table>

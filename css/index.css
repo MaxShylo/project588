@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --main-color: #222323;
     --accent-color: white;
@@ -13,302 +8,219 @@
 }
 
 body {
-    display: block;
-
+    max-width: 980px;
+    margin: auto
 }
 
 /* ------- Overheader ------- */
+
 .overheader {
-    background-color: red;
+    display: none;
 }
 
+/* ------- Header-menu ------- */
 
-.overheader p {
-    font-family: 'PT Sans';
-    color: var(--accent-color);
-    font-weight: bold;
-
-}
-
-.overheader-contacts a {
-    color: var(--accent-color);
-    text-decoration: none;
+.nav-link {
     font-family: 'PT Sans';
     font-weight: bold;
-}
-
-.overheader-contacts a:hover {
-    text-decoration: underline;
-}
-
-/* ------- Header ------- */
-
-.header-menu {
-    background-color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.header-menu a {
-    font-family: 'PT Sans';
-    font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: 12.5px;
-    margin-right: 20px;
-    margin-top: 12.5px;
-    font-size: 14px;
     color: var(--accent-color);
-    text-decoration: none;
 }
 
-.header-menu a:hover {
-    text-decoration: underline;
-}
-
-.header-menu .navbar-toggler {
-    transform: scale(0.8);
-}
-
-.header-menu .navbar-nav {
+.navbar-nav {
     align-items: center;
 }
 
-/* ----- BANNER ----- */
+.nav-item a:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+.header-contacts {
+    padding-right: 7px;
+}
+
+.links-youtube {
+    padding-left: 6px;
+}
+
+/* ------- Banner ------- */
 
 .banner {
     background-image: url(../img/banner-photo.jpeg);
     background-size: cover;
     background-position: center;
-    min-height: 540px;
-    padding: 0 24px;
-    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 400px;
 }
 
-.banner p,
-h1,
-a {
+.banner-text {
+    margin-left: 22px;
+    font-family: 'Bebas Neue';
+    color: grey;
+    font-size: 25px;
+}
+
+.banner-text-main {
     margin-left: 20px;
     font-family: 'Bebas Neue';
-}
-
-.banner p {
-    color: grey;
-    font-size: 20px;
-}
-
-.banner h1 {
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 100;
+}
+
+.banner-text-button {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
 }
 
 .banner span {
     color: red;
 }
 
+/* ------- Quote ------- */
+
 .quote {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(231, 231, 236);
-    width: auto;
-    height: 30vh;
-    justify-content: center
+    display: block;
+    margin-top: 15px;
 }
 
 .quote-text {
-    display: flex;
     font-family: 'PT Sans';
     text-align: center;
     font-style: italic;
-    align-items: center;
+    margin-top: 15px;
 }
 
 .quote-signature {
-    display: flex;
     font-family: 'PT Sans';
     color: grey;
-    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.quote-line {
+    width: 350px;
+    margin: auto;
+}
+
+.quote-red {
+    color: red;
 }
 
 /* ------- Categories ------- */
 
-.position {
+.categories {
     display: grid;
-    grid-template-columns: 1fr;
-    margin: 50px 20px;
-    grid-gap: 20px;
 }
 
-.position a {
-    font-family: 'PT Sans';
-    font-weight: bold;
-    font-size: 15px;
-    color: var(--main-color);
-    text-decoration: none;
-    margin-left: 0px;
-}
-
-.position a:hover {
-    text-decoration: underline;
+.categories-name {
+    font-family: 'Bebas Neue';
+    font-size: 50px;
+    font-weight: 100;
 }
 
 .new-arrivals {
     background-image: url(../img/new-arrivals.svg);
     background-size: cover;
     background-position: center;
-    padding-top: 170px;
-    padding-left: 24px;
-    min-height: 300px;
+    max-height: 600px;
+
 }
 
 .trainers {
     background-image: url(../img/trainers.png);
     background-size: cover;
     background-position: center;
-    padding-top: 170px;
-    padding-left: 24px;
-    min-height: 300px;
+    max-height: 600px;
+    
 }
 
 .hot-sale {
     background-image: url(../img/hot-sale.png);
     background-size: cover;
     background-position: center;
-    padding-top: 170px;
-    padding-left: 24px;
-    min-height: 300px;
+    max-height: 600px;
+    
 }
 
-.hr-short-categories-red {
-    border-bottom: 2px solid red;
-    opacity: 1;
-    width: 80px;
-}
 
-.hr-categories-red {
-    border-bottom: 2px solid red;
-    opacity: 1;
-    width: 120px;
-}
-
-.position h3 {
-    font-family: 'Bebas Neue';
-    font-size: 50px;
-    font-weight: 100;
-}
-
-.position span {
-    font-family: 'Bebas Neue';
-    color: red;
-}
-
-/*RESPONSIVE*/
 
 @media (min-width: 980px) {
-.container-block {
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 25px;
-    display: flex;
-    justify-content: space-between;
-}
-/ ------- *Overheader* ------- /
-.overheader {
-    font-size: 14px;
-    font-weight: 500;
-    display: flex;
-    padding: 12px 40px 12px 40px;
-    justify-content: space-between;
-    }
-.overheader-text {
-        flex: 2;
-    }
-.overheader-contacts {
+
+    /* ------- Overheader ------- */
+
+    .overheader {
+        background-color: red;
         display: flex;
         justify-content: space-between;
-        flex: 1;
+        height: 30px;
     }
-}
-
-/* -------Header ------- */
-.header-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-item {
-    padding-right: 20px;
-}
-
-.nav-item.hide-lg {
-    display: none;
-}
-
-.header-contacts {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 0px;
-}
-
-.links {
-    padding: 0 15px;
-    font-size: 25px;
-}
-
-/* ----- Banner ---- */
-
-.banner {
-    min-height: 1000px;
-    padding-top: 350px;
-    padding-left: 40px;
+    
+    .overheader-text p {
+        font-family: 'PT Sans';
+        color: var(--accent-color);
+        font-weight: bold;
+        padding-left: 30px;
+        padding-top: 1px;
     }
 
-.banner h1 {
-    font-size: 7rem;
+    .overheader-contacts a {
+        padding-right: 30px;
+        color: var(--accent-color);
+        text-decoration: none;
+        font-family: 'PT Sans';
+        font-weight: bold;
+    }
+
+    .overheader-contacts a:hover {
+        text-decoration: underline;
+    }
+
+    /* ------- Header-menu ------- */
+
+    .header-contacts {
+        display: flex;
+        align-items: center;
+        padding-left: 350px;
+    }
+
+    .nav-item a:hover {
+        color: red !important;
+        text-decoration: underline !important;
+    }
+
+    .links-youtube {
+        padding-left: 6px;
+    }
+
+    /* ------- Banner ------- */
+
+    .banner-text {
+        font-size: 20px;
+    }
+    
+    .banner-text-main {
+        font-size: 80px;
+        font-weight: 100;
+    }
+
+    /* ------- Quote ------- */
+
+    .quote-text {
+        font-size: 20px;
+    }
+    
+    .quote-signature {
+        font-size: 15px;
+    }
+    
+    .quote-line {
+        width: 620px;
+        margin: auto;
+    }
 }
-
-.banner p {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-
-
-/* ------- Categories ------- */
-
-.position {
-    grid-template-columns: 50% 1fr 1fr;
-    width: 100%;
-    min-height: 400px;
-}
-
-.position a {
-    font-size: 0.9rem;
-}
-.position h3 {
-    font-size: 2.6rem;
-}
-
-.new-arrivals {
-    padding-top: 270px;
-    min-height: 400px;
-}
-
-.trainers {
-    padding-top: 270px;
-    min-height: 400px;
-}
-
-.hot-sale {
-    padding-top: 270px;
-    min-height: 400px;
-} 
-}
-
-
-
 
 
 /*Controls*/
