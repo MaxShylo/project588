@@ -551,6 +551,7 @@ body {
     }
     
     .about-us-text {
+        font-size: 16px;
         padding-left: 65px;
         padding-right: 65px;
     }
