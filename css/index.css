@@ -258,23 +258,22 @@ body {
 }
 
 .about-us-block {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    
 }
 
 .about-us-logo {
     background-image: url(../img/about-us.jpeg);
     background-size: cover;
     background-position: center;
-    min-width: 450px;
-    min-height: 500px;
+    min-height: 600px;
 }
 
 .about-us-title {
     font-family: 'Bebas Neue';
     font-size: 35px;
-    padding-top: 65px;
+    padding-top: 25px;
     padding-left: 25px;
 }
 
@@ -291,16 +290,31 @@ body {
 
 .about-us-subheading {
     font-family: 'PT Sans';
-    font-size: 18px;
-    padding: 10px;
+    font-size: 21px;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: start;
 }
 
 .about-us-text {
     font-family: 'PT Sans';
-    font-size: 15px;
-    padding: 10px;
+    font-size: 18px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: start;
 }
 
+.about-us-link {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.about-us-link-youtube {
+    padding-left: 6px;
+}
 /* ------- Countdown ------- */
 
 .countdown-title {
@@ -504,6 +518,47 @@ body {
     
     }
 
+    /* ------- About us ------- */
+    
+    .about-us-block {
+        display: flex;     
+    }
+    
+    .about-us-logo {
+        background-image: url(../img/about-us.jpeg);
+        flex: 1;
+    }
+    
+    .about-us-content {
+        flex: 1;
+    }
+
+    .about-us-title {
+        font-size: 50px;
+        padding-top: 75px;
+        padding-left: 65px;
+    }
+    
+    .about-us-line {
+        width: 85px;
+        margin-left: 65px;
+    }
+    
+    .about-us-subheading {
+        font-size: 23px;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    
+    .about-us-text {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    
+    .about-us-link {
+        padding-left: 60px;
+    }
+    
 }
 
 
