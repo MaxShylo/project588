@@ -216,6 +216,130 @@ body {
     padding-top: 12px;
 }
 
+/* ------- Benefits ------- */
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 5px;
+}
+
+.benefits-categories {
+    border: 2px solid silver;
+    text-align: center;
+    padding: 40px;
+    margin: 20px;
+}
+
+.benefits-logo {
+    width: 50px;
+    opacity: 0.5;
+}
+
+.benefits h4 {
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    padding-top: 15px;   
+}
+
+.benefits-subheading {
+    font-family: 'PT Sans';
+    font-size: 15px;
+    color: grey;
+    padding: auto;
+
+}
+
+/* ------- About US ------- */
+
+.about-us {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+}
+
+.about-us-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-us-logo {
+    background-image: url(../img/about-us.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-width: 450px;
+    min-height: 500px;
+}
+
+.about-us-title {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    padding-top: 65px;
+    padding-left: 25px;
+}
+
+.about-us-dot {
+    color: red;
+}
+
+.about-us-line {
+    width: 50px;
+    color: red;
+    opacity: 2;
+    margin-left: 25px;
+}
+
+.about-us-subheading {
+    font-family: 'PT Sans';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.about-us-text {
+    font-family: 'PT Sans';
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* ------- Countdown ------- */
+
+.countdown-title {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+   
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+   
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #00bf96;
+    display: inline-block;
+}
+   
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816a;
+    display: inline-block;
+}
+   
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
 @media (min-width: 980px) {
 
     /* ------- Overheader ------- */
@@ -344,6 +468,42 @@ body {
         color: red;
         opacity: 1;
     }
+
+    /* ------- Benefits ------- */
+
+    .benefits {
+        display: flex;
+        
+    }
+    
+    .benefits-categories {
+        border: 2px solid silver;
+        text-align: center;
+        max-height: 200px;
+        min-width: 100px;
+        margin: 7px;
+        padding-top: 25px;
+    }
+    
+    .benefits-logo {
+        width: 40px;
+        opacity: 0.5;
+    }
+    
+    .benefits h4 {
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        padding-top: 10px;   
+    }
+    
+    .benefits-subheading {
+        font-family: 'PT Sans';
+        font-size: 12px;
+        color: grey;
+        padding: auto;
+    
+    }
+
 }
 
 
