@@ -113,19 +113,17 @@ body {
 
 .categories {
     display: grid;
-}
-
-.categories-name {
-    font-family: 'Bebas Neue';
-    font-size: 50px;
-    font-weight: 100;
+    grid-template-columns: 1fr;
+    margin: 15px 20px;
 }
 
 .new-arrivals {
     background-image: url(../img/new-arrivals.svg);
     background-size: cover;
     background-position: center;
-    max-height: 600px;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
 
 }
 
@@ -133,19 +131,90 @@ body {
     background-image: url(../img/trainers.png);
     background-size: cover;
     background-position: center;
-    max-height: 600px;
-    
+    margin-top: 20px;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
 }
-
+    
 .hot-sale {
     background-image: url(../img/hot-sale.png);
     background-size: cover;
     background-position: center;
-    max-height: 600px;
+    margin-top: 20px;
+    padding-top: 170px;
+    padding-left: 24px;
+    min-height: 300px;
+}
+
+.categories-name {
+    font-family: 'Bebas Neue';
+    font-size: 37px;
+    font-weight: 100;
     
 }
 
+.categories a {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--main-color);
+    text-decoration: none;
+}
 
+.categories a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.categories-dot {
+    font-family: 'Bebas Neue';
+    color: red;
+}
+
+.hr-short-categories-red {
+    width: 130px;
+    color: red;
+    opacity: 1;
+}
+
+.hr-categories-red {
+    width: 130px;
+    color: red;
+    opacity: 1;
+}
+
+/* ------- WHY CHOOSE US ------- */
+
+.why-choose-us {
+    margin-top: 50px;
+}
+
+.why-choose-us-text {
+    font-family: 'Bebas Neue';
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.why-choose-us-dot {
+    color: red;
+}
+
+.why-choose-us-line {
+    color: silver;
+    opacity: 1;
+    width: 70px;
+    margin: auto;
+}
+
+.why-choose-us-subheading {
+    font-family: 'PT Sans';
+    font-size: 20px;
+    color: grey;
+    text-align: center;
+    padding-top: 12px;
+}
 
 @media (min-width: 980px) {
 
@@ -219,6 +288,61 @@ body {
     .quote-line {
         width: 620px;
         margin: auto;
+    }
+
+    /* ------- Categories ------- */
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        min-height: 400px;
+    }
+
+    .new-arrivals {
+        padding-top: 170px;
+        padding-left: 24px;
+        width: max-content;
+        flex: 3;
+    
+    }
+    
+    .trainers {
+        margin-top: 0px;
+        margin-left: 20px;
+        padding-top: 170px;
+        padding-left: 24px;
+        min-height: 300px;
+        flex: 1;
+    }
+        
+    .hot-sale {
+        margin-top: 0px;
+        margin-left: 20px;
+        padding-top: 170px;
+        padding-left: 24px;
+        min-height: 300px;
+        flex: 1;
+    }
+    
+    .categories-name {
+        font-family: 'Bebas Neue';
+        font-size: 45px;
+        font-weight: 100;
+        padding-top: 110px;
+    }
+    
+    .categories a {
+        font-family: 'PT Sans';
+        font-weight: bold;
+        font-size: 14px;
+        color: var(--main-color);
+        text-decoration: none;
+    }
+        
+    .hr-categories-red {
+        width: 117px;
+        color: red;
+        opacity: 1;
     }
 }
 
