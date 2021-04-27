@@ -352,6 +352,40 @@ body {
     color: red;
 }
 
+/* ------- Mid-season-sale ------- */
+
+.mid-season {
+    margin-top: 50px;
+}
+
+.mid-season-title {
+    font-family: 'Bebas Neue';
+    font-size: 45px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.mid-season-dot {
+    color: red;
+}
+
+.mid-season-line {
+    color: silver;
+    opacity: 1;
+    width: 70px;
+    margin: auto;
+}
+
+.mid-season-subheading {
+    font-family: 'PT Sans';
+    font-size: 19px;
+    color: grey;
+    text-align: center;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 /* ------- Countdown ------- */
 
 .countdown-title {
@@ -608,6 +642,9 @@ body {
     .new-collection-text-main {
         font-size: 100px;
     }    
+
+    /* ------- Mid-season-sale ------- */
+
 
 }
 
