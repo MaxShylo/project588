@@ -674,7 +674,26 @@ body {
 
     /* ------- Mid-season-sale ------- */
 
-
+    .product-list {
+        display: flex
+    }
+    
+    .product img {
+        object-fit: cover;
+        max-height: 450px;
+        max-width: 450px;    
+    }
+    
+    .product-title {
+        font-size: 18px;
+        padding-top: 25px;
+    }
+    
+    .price {
+        font-size: 18px;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
 }
 
 
