@@ -315,6 +315,43 @@ body {
 .about-us-link-youtube {
     padding-left: 6px;
 }
+
+/* ------- New-collection ------- */
+
+.new-collection {
+    background-image: url(../img/new-collection-img.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.new-collection-text {
+    margin-left: 22px;
+    font-family: 'Bebas Neue';
+    color: grey;
+    font-size: 25px;
+}
+
+.new-collection-text-main {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.new-collection-text-button {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.new-collection-dot {
+    color: red;
+}
+
 /* ------- Countdown ------- */
 
 .countdown-title {
@@ -560,6 +597,18 @@ body {
         padding-left: 60px;
     }
     
+    /* ------- New-collection ------- */
+
+    .new-collection-text {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    
+    .new-collection-text-main {
+        font-size: 100px;
+    }    
+
 }
 
 
