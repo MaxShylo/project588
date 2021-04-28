@@ -481,6 +481,74 @@ body {
     margin-top: 25px;
 }
 
+/* ------- Footer ------- */
+
+.footer-block {
+    background-color: var(--main-color);
+    color: var(--accent-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+}
+
+.menu a {
+    display: block;
+    font-family: 'PT Sans';
+    color: var(--accent-color);
+    text-decoration: none;
+    
+}
+
+.footer-logo {
+    margin-top: 50px;
+}
+
+.footer-text-title {
+    margin-top: 20px;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    color: silver;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.footer-title {
+    margin-top: 20px;;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.footer-line {
+    color: red;
+    opacity: 1;
+}
+
+.menu a:hover {
+    color: red !important;
+    text-decoration: underline !important;
+}
+
+.created-line {
+    color: rgb(102, 102, 114))
+    opacity: 1;
+    width: 380px;
+}
+
+.created-text {
+    font-family: 'Bebas Neue';
+    font-size: 15px;
+    font-weight: 200;
+}
+
 @media (min-width: 980px) {
 
     /* ------- Overheader ------- */
