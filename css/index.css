@@ -590,6 +590,49 @@ body {
     height: 100%;
 }
 
+/* ------- User-data ------- */
+
+.user-data {
+    background-color: #e0e0e0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.user-data-inputs input {
+    font-family: 'PT Sans';
+    font-size: 15px;
+    font-weight: 0;
+    color: #717474;
+    border-color: #9b9b9b;
+    border-width: 0;
+    background-color: rgba(34, 35, 35, 0.12);
+    text-align: inherit;
+}
+
+.imputs-name {
+    margin-top: 35px;
+    padding: 10px 65px;
+}
+
+.imputs-number {
+    margin-top: 20px;
+    padding: 10px 65px;
+}
+
+.imputs-email {
+    margin-top: 20px;
+    padding: 10px 65px;
+}
+
+.imputs-text {
+    margin-top: 20px;
+    padding: 60px 65px;
+}
+
+.user-data-submit {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 @media (min-width: 980px) {
 
@@ -890,6 +933,82 @@ body {
 
     .created-line {
         width: 100%;
+    }
+
+    /* ------- Contacts ------- */
+
+    .contacts {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    .shop-data {
+        flex: 1;
+    }
+
+    .user-data {
+        flex: 1;
+    }
+
+    .contact-title {
+        margin-top: 30px;
+        font-size: 45px;
+        font-weight: 200;
+    }
+    
+    .contact-text {
+        font-size: 18px;
+        padding-right: 15px;
+    }
+    
+    .contacts-details {
+        margin-top: 5px;
+    }
+
+    .contact-mini-title {
+        font-size: 25px;
+    }
+    
+    /* ------- User-data ------- */
+    
+    .user-data {
+        margin-top: 30px;
+    }
+    
+    .user-data-inputs input {
+        font-family: 'PT Sans';
+        font-size: 15px;
+        font-weight: 0;
+        color: #717474;
+        border-color: #9b9b9b;
+        border-width: 0;
+        background-color: rgba(34, 35, 35, 0.12);
+        text-align: inherit;
+    }
+    
+    .imputs-name {
+        margin-top: 55px;
+        padding: 20px 75px;
+    }
+    
+    .imputs-number {
+        margin-top: 30px;
+        padding: 20px 75px;
+    }
+    
+    .imputs-email {
+        margin-top: 30px;
+        padding: 20px 75px;
+    }
+    
+    .imputs-text {
+        margin-top: 30px;
+        padding: 70px 75px;
+    }
+    
+    .user-data-submit {
+        margin-top: 45px;
+        margin-bottom: 30px;
     }
 
 }
