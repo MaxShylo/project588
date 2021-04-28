@@ -549,6 +549,17 @@ body {
     font-weight: 200;
 }
 
+/* ------- Contacts ------- */
+
+.contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 30px;
+}
+
+
+
+
 @media (min-width: 980px) {
 
     /* ------- Overheader ------- */
