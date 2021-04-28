@@ -53,7 +53,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 .banner-text {
@@ -326,7 +326,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    min-height: 400px;
+    min-height: 500px;
 }
 
 .new-collection-text {
@@ -426,7 +426,7 @@ body {
     font-family: 'Bebas Neue';
     font-weight: 100;
     font-size: 40px;
-    margin: 100px 0px 20px;
+    margin: 70px 0px 20px;
 }
    
 .countdown {
@@ -633,6 +633,45 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+/* ------- Get your discount ------- */
+
+.get-your-discount {
+    background-image: url(../img/get-your-discount-banner.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 500px;
+    margin-top: 60px;
+}
+
+.get-your-discount-text {
+    margin-left: 22px;
+    font-family: 'Bebas Neue';
+    color: rgb(254 241 241 / 62%);
+    font-size: 18px;
+}
+
+.get-your-discount-main-text {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
+    color: var(--accent-color);
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.get-your-discount-button {
+    margin-left: 20px;
+    font-family: 'Bebas Neue';
+}
+
+.get-your-discount-dot {
+    color: red;
+}
+
 
 @media (min-width: 980px) {
 
@@ -1011,6 +1050,18 @@ body {
         margin-bottom: 30px;
     }
 
+    /* ------- Get-your-discount ------- */
+
+    .get-your-discount-text {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 5px;
+    }
+    
+    .get-your-discount-main-text {
+        font-size: 100px;
+    }
+
 }
 
 
@@ -1049,5 +1100,22 @@ body {
   }
   .button-product:hover {
     background-color: red;
+    color: white;
+  }
+
+  .button-dark {
+    background-color: var(--accent-color); /* Red */
+    border: none;
+    color: var(--main-color);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+  }
+  .button-dark:hover {
+    background-color: var(--main-color);
     color: white;
   }
