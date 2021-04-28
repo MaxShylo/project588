@@ -538,7 +538,7 @@ body {
 }
 
 .created-line {
-    color: rgb(102, 102, 114))
+    color: rgb(102, 102, 114);
     opacity: 1;
     width: 380px;
 }
@@ -557,8 +557,17 @@ body {
     margin: 30px 30px;
 }
 
+.contact-title {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    font-weight: 200;
+}
 
-
+.contact-text {
+    font-family: 'PT Sans';
+    font-size: 20px;
+    color: grey;
+}
 
 @media (min-width: 980px) {
 
@@ -693,7 +702,6 @@ body {
 
     .benefits {
         display: flex;
-        
     }
     
     .benefits-categories {
@@ -812,7 +820,6 @@ body {
         display: inline-block;
         font-weight: 600;
         font-size: 70px;
-        
     }
               
     .countdown-time {
@@ -863,6 +870,9 @@ body {
         width: 100%;
     }
 
+}
+
+
 /*Controls*/
 
 .button {
@@ -899,3 +909,4 @@ body {
   .button-product:hover {
     background-color: red;
     color: white;
+  }
