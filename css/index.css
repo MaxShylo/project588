@@ -1021,8 +1021,9 @@ height:250px;
     }
 
     .created-line {
-        width: 100%;
+        display: none;
     }
+
 
     /* ------- Contacts ------- */
 
