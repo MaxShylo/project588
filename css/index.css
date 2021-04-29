@@ -556,7 +556,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 30px 30px;
-    margin-top: 280px !important;
+    margin-top: 295px !important;
 }
 
 .contact-title {
@@ -711,10 +711,6 @@ body {
 width:350px;
 height:250px;
 }
-
-
-
-
 
 @media (min-width: 980px) {
 
@@ -1020,6 +1016,7 @@ height:250px;
     /* ------- Contacts ------- */
 
     .contacts {
+        margin-top: 365px !important;
         display: flex;
         margin-top: 0px;
     }
@@ -1104,6 +1101,18 @@ height:250px;
     .get-your-discount-main-text {
         font-size: 100px;
     }
+
+    /* ------- Carousel ------- */
+
+    .carousel {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .carousel-img {
+        width:420px;
+        height:310px;
+        }
 
 }
 
